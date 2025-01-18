@@ -78,7 +78,7 @@ main{
 
 main h1{
 
-    height: 80px;
+    height: 90px;
     text-align: center;
     border-bottom: 2px solid rgba(150,150,150,0.5);
     
@@ -132,6 +132,7 @@ footer{
     height: 80px;
     color: #fff;
     text-align: center;
+    font-size: 10px;
 }
 
 #congo-flag{
