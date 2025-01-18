@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd230</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development">
+    <meta name="author" content="John Ntambwe">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/lager.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Roboto&display=swap" rel="stylesheet">
+
+    <title>John Ntambwe - WDD 230 - Web Frontend Development</title>
+   
+
+    
 </head>
 <body>
-    
+    <header>
+        <img id="profile" src="images/john-ntambwe-profile.png" alt="John Ntambwe profile">
+        <span class="name">John Ntambwe</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="active"><a href="/index.html" >Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+        </ul>
+         
+    </nav>
+
+    <main>
+        <h1 class="main-title">WDD 230: Web Frontend Development</h1>
+        <!-- First Scetion -->
+        <section class="card section1">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li>week1: 
+                    <a href="#">Layout</a> |
+                    <a href="#">Media Query</a> |
+                    <a href="#">JS Pen</a>
+                </li>
+                <li>week2</li>
+                <li>week3</li>
+                <li>week4</li>
+                <li>week5</li>
+                <li>week6</li>
+            </ul>
+        </section>
+        <!-- second section  -->
+        <section class="card section2">
+            <h2>Information</h2>
+            <div class="information-placeholder">
+                <p>Weather: 76 F - Sunshine</p>
+                <p>Page Visit : 15</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p> &copy; <span class="jsCurrentYear"></span> John Ntambwe | DR Congo. 
+            <img id="congo-flag" src="/images/cd.png" alt="DR Congo Flag" >
+        </p>
+        <p id="lastModified">last modified </p>
+
+    </footer>
+
+    <script src="/scripts/getDates.js"></script>
 </body>
 </html>
