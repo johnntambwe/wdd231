@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Tech Solutions Inc.",
+        "address": "123 Main Street, Anytown, CA 12345",
+        "phone": "(555) 123-4567",
+        "website": "https://techsolutions.example.com",
+        "image": "https://cdn.pixabay.com/photo/2023/02/01/00/54/company-7759278_1280.png",
+        "membershipLevel": 3,
+        "category": "Technology",
+        "description": "Providing innovative software solutions for businesses",
+        "joinDate": "2022-01-15"
+    },
+    {
+        "name": "Green Earth Landscaping",
+        "address": "456 Oak Avenue, Anytown, CA 12345",
+        "phone": "(555) 234-5678",
+        "website": "https://greenearth.example.com",
+        "image": "https://cdn.pixabay.com/photo/2022/08/28/03/42/sea-7415664_640.png",
+        "membershipLevel": 2,
+        "category": "Landscaping",
+        "description": "Eco-friendly landscaping services for residential and commercial properties",
+        "joinDate": "2022-03-22"
+    },
+    {
+        "name": "Family First Dentistry",
+        "address": "789 Elm Street, Anytown, CA 12345",
+        "phone": "(555) 345-6789",
+        "website": "https://familydentist.example.com",
+        "image": "https://cdn.pixabay.com/photo/2015/05/04/20/23/color-752919_640.png",
+        "membershipLevel": 1,
+        "category": "Healthcare",
+        "description": "Comprehensive dental care for the whole family",
+        "joinDate": "2022-05-10"
+    },
+    {
+        "name": "Summit Construction Co.",
+        "address": "321 Pine Road, Anytown, CA 12345",
+        "phone": "(555) 456-7890",
+        "website": "https://summitconstruction.example.com",
+        "image": "https://cdn.pixabay.com/photo/2017/09/26/21/54/logo-2790253_640.png",
+        "membershipLevel": 3,
+        "category": "Construction",
+        "description": "Quality construction services with over 20 years of experience",
+        "joinDate": "2021-11-30"
+    },
+    {
+        "name": "Fresh Market Grocers",
+        "address": "654 Maple Drive, Anytown, CA 12345",
+        "phone": "(555) 567-8901",
+        "website": "https://freshmarket.example.com",
+        "image": "https://cdn.pixabay.com/photo/2015/05/03/12/38/purple-751134_640.png",
+        "membershipLevel": 2,
+        "category": "Retail",
+        "description": "Local grocery store offering fresh produce and quality products",
+        "joinDate": "2023-01-08"
+    },
+    {
+        "name": "Precision Accounting Services",
+        "address": "987 Cedar Lane, Anytown, CA 12345",
+        "phone": "(555) 678-9012",
+        "website": "https://precisionaccounting.example.com",
+        "image": "https://cdn.pixabay.com/photo/2017/10/06/10/20/star-2822548_640.png",
+        "membershipLevel": 1,
+        "category": "Financial Services",
+        "description": "Professional accounting and tax preparation services",
+        "joinDate": "2022-08-14"
+    },
+    {
+        "name": "Creative Web Designs",
+        "address": "147 Walnut Street, Anytown, CA 12345",
+        "phone": "(555) 789-0123",
+        "website": "https://creativeweb.example.com",
+        "image": "https://cdn.pixabay.com/photo/2015/05/03/12/38/logo-751132_640.png",
+        "membershipLevel": 3,
+        "category": "Web Development",
+        "description": "Custom website design and development for small businesses",
+        "joinDate": "2021-09-05"
+    }
+]
