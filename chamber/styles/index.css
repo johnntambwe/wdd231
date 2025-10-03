@@ -80,11 +80,11 @@ nav a.active {
 
 /* Hero section */
 .hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)),
-        url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/chamber/images/hero-image.avif');
     color: white;
     text-align: center;
-    padding: 4rem 1rem;
+    padding: 10rem 1rem;
 }
 
 .hero-content h2 {
@@ -122,6 +122,11 @@ nav a.active {
 }
 
 /* Events section */
+
+.events {
+    background-image: url(/chamber/images/event-image2.jpg);
+}
+
 .event-item {
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
@@ -139,6 +144,10 @@ nav a.active {
 }
 
 /* Weather section */
+.weather {
+    background-image: url(/chamber/images/weather-image.jpg);
+}
+
 .weather-current {
     text-align: center;
 }
@@ -158,30 +167,54 @@ nav a.active {
     margin-bottom: 0.5rem;
 }
 
-/* Forecast section */
-.forecast-days {
+/* Call to Action section */
+.call {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+
+.action {
+    margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.day {
+.action a {
+    text-decoration: none;
+    color: white;
+}
+
+.action p {
     text-align: center;
-    flex: 1;
-    padding: 0.5rem;
+    margin-bottom: 20px;
 }
 
-.day p:first-child {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+.action button {
+    background-color: var(--secondary-color);
+    border-color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 15px;
+    transition: background-color 0.3s;
 }
 
-.day p:last-child {
-    color: var(--secondary-color);
-    font-weight: bold;
+.action button:hover,
+button.active {
+    background-color: var(--primary-color);
 }
+
 
 /* Business spotlight */
+.business-spotlight-card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
 .business {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
+    width: 400px;
+    text-align: center;
+    padding-top: 15px;
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #eee;
@@ -197,11 +230,24 @@ nav a.active {
     margin-bottom: 0.5rem;
 }
 
-.tagline {
+.description {
     font-style: italic;
-    color: #666;
+    /* color: #666; */
+    color: var(--secondary-color);
     margin-bottom: 0.5rem;
 }
+
+.membership-level {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.member-logo {
+    width: auto;
+    height: 75px;
+}
+
 
 /* Footer styles */
 footer {
@@ -222,7 +268,7 @@ footer {
 .contact-info,
 .project-info {
     flex: 1;
-    min-width: 300px;
+    min-width: auto;
     margin-bottom: 1rem;
 }
 
@@ -277,12 +323,15 @@ footer {
         font-size: 2rem;
     }
 
-    .forecast-days {
+    .action {
         flex-direction: column;
     }
 
-    .day {
-        margin-bottom: 1rem;
+
+    .business-spotlight-card {
+        display: block;
+        width: auto;
+
     }
 
     .footer-content {
