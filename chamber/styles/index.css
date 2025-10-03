@@ -124,7 +124,7 @@ nav a.active {
 /* Events section */
 
 .events {
-    background-image: url(/chamber/images/event-image2.jpg);
+    background-image: url(./chamber/images/event-image2.jpg);
 }
 
 .event-item {
@@ -145,7 +145,7 @@ nav a.active {
 
 /* Weather section */
 .weather {
-    background-image: url(/chamber/images/weather-image.jpg);
+    background-image: url(./chamber/images/weather-image.jpg);
 }
 
 .weather-current {
