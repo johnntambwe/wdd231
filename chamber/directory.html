@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 231 - Web Frontend Development 1">
     <meta name="author" content="John Ntambwe">
-    <title>Golden-Chamber Site Plan</title>
+    <title>Directory Golden Chamber</title>
     <link rel="icon" href="/images/favicon.ico">
 
     <meta property="og:title" content="Golden Chamber">
@@ -16,7 +16,8 @@
     <meta property="og:url" content="https://johnntambwe.github.io/wdd231/index.html">
 
     <link rel="stylesheet" href="./styles/normalize.css">
-    <link type="text/css" rel="stylesheet" href="./styles/directory.css">
+    <link type="text/css" rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/directory.css">
 
     <script src="./scripts/directory.js" defer></script>
     <!-- <script src="./data/members.json" defer></script> -->
@@ -24,156 +25,28 @@
 
 <body>
     <header>
-        <h1>[Golden-Chamber.com] Site Plan</h1>
-        <h2>John Ntambwe</h2>
-        <h2>WDD231</h2>
-        <!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 130.03 -->
+        <div class="header-container">
+            <div class="logo">
+                <img src="/images/golden-chamber-logo-in-color.png" alt="Golden-Chamber-logo">
+                <h1>Golden Chamber of Commerce</h1>
+            </div>
+            <nav>
+                <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+                <ul id="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
 
-        <hr>
-        <h2>Overview</h2>
-        <h3>Purpose</h3>
-        <p>The aim of Golden Chamber is to promote business through member services,
-            economic and community development and a public policy that balances economic prosperity with quality of
-            life in the beautiful city of Lubumbashi.
-            Disclaimer: All information presented here does not violate copyright &copy; rights in any way.
-            The purpose of this site is purely educational.
-        </p> <!-- change this -->
-
-
-        <h3>Audience</h3>
-        <p>All People living in Lubumbashi who want higher quality products and services that add value to thier day to
-            day lifestyle and daily activities bieng directly deliver to them.</p> <!-- change this -->
-
-        <hr>
-        <h2>Branding</h2>
-        <h3>Website Logo</h3>
-        <!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
-        <img src="./images/gs-logo-white-bg.png" alt="Logo image">
-        <hr>
-        <h2>
-            Style Guide
-        </h2>
-
-
-        <h3>
-            Color Palette
-        </h3>
-        <!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
-
-        <!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
-        Palette URL: <a href="https://coolors.co/palette/8ecae6-219ebc-023047-ffb703-fb8500"
-            target="_blank">https://coolors.co/palette/8ecae6-219ebc-023047-ffb703-fb8500</a>
-
-
-        <table class="colors">
-            <tr>
-                <th>Primary</th>
-                <th>Secondary</th>
-                <th>Accent 1</th>
-                <th>Accent 2</th>
-            </tr>
-            <!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
-            <tr>
-                <td class="primary">[#023047]</td>
-                <td class="secondary">[#0000EE]</td>
-                <td class="accent1">[#FFB703]</td>
-                <td class="accent2"></td>
-            </tr>
-        </table>
-
-
-        <h3>
-            Typography
-        </h3>
-        <!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
-
-        <h4>
-            Heading Font: Roboto Mono, sans serif, serif <!-- change this -->
-        </h4>
-        <h4>
-            Paragraph Font: Dancing Script, sans serif <!-- change this -->
-        </h4>
-        <h3>
-            Normal paragraph example
-        </h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-        </p>
-        <h3>
-            Colored paragraph example
-        </h3>
-        <p class="colored">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
-        </p>
-
-
-        <h3>
-            Navigation
-        </h3>
-        <!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./discover.html">Discover</a>
-            <a href="./business-directory.html">Business Directory</a>
-            <a href="./sing-in.html">Join</a>
-        </nav>
-        <hr>
-        <h2>
-            Site Map
-        </h2>
-        <div class="sitemap">
-            <div class="sm-home">
-                Home
-            </div>
-            <div class="sm-page2">
-                Discover
-            </div>
-            <div class="sm-page3">
-                Business Directory
-            </div>
-
-            <div class="top">
-                &nbsp;
-            </div>
-            <div class="left">
-                &nbsp;
-            </div>
-            <div class="right">
-                &nbsp;
-            </div>
-
-        </div>
-
-        <hr>
-        <h2>
-            Content
-        </h2>
-        <h3>Home page</h3>
-        <p>
-            <strong>Welcome to Golden-Services.com</strong> <br><br>
-            The home page will contain some attention grabbing information along with the product's picture,
-            price, calls to action, and business spotlights.
-        </p>
-        <!-- <p>Images for the Home page</p>
-        <img src="#" alt="first-image"> The first image on the home page to be added
-        <img src="#" alt="the second image"> The second image on the home page to be added -->
-
-        <h3>Discover</h3>
-        <p>
-            The discover page locale history, current demographics, and current events.
-            An image montage will orient visitors to the area and interesting area sites, etc.
-
-            <!-- In your chamber directory page -->
+        <!-- In your chamber directory page -->
         <section id="members">
-            <h2>Chamber Members</h2>
+            <h1>Chamber Members</h1>
             <div class="menu">
                 <button id="grid">Grid</button>
                 <button id="list">List</button>
@@ -188,68 +61,33 @@
             </article>
 
         </section>
-
-        </p>
-
-
-        <h3>Sing In</h3>
-        <p>
-            This page contains information about the benefit of joining the mazing Golden-Service family and a
-            membership application form.
-            There are three membership level options of non-profit, silver, and gold.
-            The different levels have different perks including directory listings,
-            publications, trainings, social media work, luncheons, sponsorships, advertising, etc.
-        </p>
-
-        <hr>
-        <h2>
-            Wireframes
-        </h2>
-
-        <!-- <p>Create three wireframes for your site. One for each page and list them here</p> -->
-
-        <h3>Home</h3>
-        <p>
-            <!-- [Any additional details about home that the wireframe does not make clear] -->
-        </p>
-        <img src="./images/home-page.png" alt="home page wireframe">
-
-        <h3>Discover</h3>
-        <p>
-            <!-- [Any additional details about page 2 that the wireframe does not make clear] -->
-        </p>
-        <img src="./images/about-us.png" alt="about us page wireframe">
-
-        <h3>Sing In</h3>
-        <p>
-            <!-- [Any additional details about page 3 that the wireframe does not make clear] -->
-        </p>
-        <img src="./images/sing-in.png" alt="sing in page wireframe">
-
-
     </main>
 
     <footer>
-        <ul>
-            <li>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Golden Chamber of Commerce</h3>
+                <p>20 Kiankodi St, Lubumbashi, DR Congo.</p>
+                <p>goldenservice011@gmail.com</p>
+                <p>(+243) 8100-31046</p>
+            </div>
+            <div class="footer-img-links">
+
+
                 <a href="https://www.linkedin.com"><img src="../images/linkedin-icon.png" alt="linkedIn"></a>
-            </li>
-            <li>
+
                 <a href="https://github.com/johnntambwe/"><img src="../images/github-icon.png" alt="Github"></a>
-            </li>
-            <li>
+
                 <a href="https://x.com"><img src="../images/twitter-icon.png" alt="X"></a>
-            </li>
-        </ul>
 
-
-        <p>
-            &copy;<span class="jsCurrentYear"></span> 🍃John Ntambwe 🌏 DRCongo.
-        </p>
-        <p>
-            Last modification: <span id="lastModified"></span>
-
-        </p>
+            </div>
+            <div class="project-info">
+                <p>WDD231 Class Project</p>
+                <p>🍃 John Ntambwe 🌏</p>
+                <p>&copy; 2025 Golden Chamber of Commerce</p>
+                <p id="last-modified">Last Modification: </p>
+            </div>
+        </div>
     </footer>
 </body>
 

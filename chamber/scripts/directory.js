@@ -1,9 +1,3 @@
-let currentYear = document.querySelector(".jsCurrentYear");
-let lastModified = document.querySelector("#lastModified");
-const date = new Date();
-
-currentYear.innerHTML = date.getFullYear();
-lastModified.innerHTML = document.lastModified;
 
 // scripts/members.js
 
@@ -44,6 +38,7 @@ function displayMembers(members) {
         `;
         section.appendChild(memberCard);
         container.appendChild(section);
+        // container.appendChild(memberCard);
     });
 }
 
@@ -56,15 +51,14 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
 
 gridbutton.addEventListener("click", () => {
-    // example using arrow function
     display.classList.add("grid");
     display.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+listbutton.addEventListener("click", showList);
 
 function showList() {
     display.classList.add("list");
