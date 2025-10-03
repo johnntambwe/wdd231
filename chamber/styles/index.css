@@ -81,7 +81,7 @@ nav a.active {
 /* Hero section */
 .hero {
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/chamber/images/hero-image.avif');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-image.avif');
     color: white;
     text-align: center;
     padding: 10rem 1rem;
@@ -124,7 +124,7 @@ nav a.active {
 /* Events section */
 
 .events {
-    background-image: url(./chamber/images/event-image2.jpg);
+    background-image: url(../images/event-image2.jpg);
 }
 
 .event-item {
@@ -145,7 +145,7 @@ nav a.active {
 
 /* Weather section */
 .weather {
-    background-image: url(./chamber/images/weather-image.jpg);
+    background-image: url(../images/weather-image.jpg);
 }
 
 .weather-current {
