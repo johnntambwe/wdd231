@@ -191,7 +191,7 @@ nav a.active {
 }
 
 .button {
-    background-color: var(--secondary-color);
+    background-color: #3498db;
     border-color: white;
     margin-top: 2rem;
     padding: 0.5rem 1rem;
