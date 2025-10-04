@@ -12,13 +12,17 @@
     <meta property="og:title" content="Golden Chamber">
     <meta property="og:description"
         content="Golden Chamber aims to bring an additional value to all businesses and entrepreneurs in Lubumbashi.">
-    <meta property="og:image" content="./images/golden-chamber-logo-in-color.png">
+    <meta property="og:image" content="./images/golden-chamber-logo-in-color.png" />
     <meta property="og:url" content="https://johnntambwe.github.io/wdd231/index.html">
 
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="./styles/join.css">
+    <link rel="stylesheet" href="./styles/thankyou.css">
 
 
-    <script src="scripts/index.js" defer></script>
+    <script src="./scripts/join.js" defer></script>
+    <script src="./scripts/thankyou.js" defer></script>
+
 </head>
 
 <body>
@@ -40,58 +44,18 @@
             </nav>
         </div>
     </header>
-
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Welcome to Golden Chamber of Commerce</h2>
-                <p>Supporting local businesses and fostering community growth</p>
-                <a href="/chamber/join.html" class="button">Join our chamber now</a>
-            </div>
-        </section>
-
-        <div class="content-grid">
-            <section class="events card">
-                <h2>Events</h2>
-                <div class="event-item">
-                    <h3>Business Networking Mixer</h3>
-                    <p>Join us for an evening of networking with local business owners.</p>
-                    <p><strong>Date:</strong> October 25, 2025</p>
-                    <p><strong>Time:</strong> 6:00 PM - 8:00 PM</p>
-                </div>
-                <div class="event-item">
-                    <h3>Small Business Workshop</h3>
-                    <p>Learn strategies to grow your business in today's market.</p>
-                    <p><strong>Date:</strong> November 5, 2025</p>
-                    <p><strong>Time:</strong> 9:00 AM - 12:00 PM</p>
-                </div>
-            </section>
-
-            <section class="weather card">
-                <h2>Current Weather</h2>
-                <div class="weather-current">
-                    <div class="temp"></div>
-                    <img src="#" id="weather-icon" alt="weather-icon">
-                    <div class="condition"></div>
-                    <div class="details">
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="call card">
-                <h2>What Next?</h2>
-                <div class="action">
-                    <p>Want to act as a unified voice for businesses, fostering economic growth through networking,
-                        advocacy, and community support?</p>
-                    <a href="/chamber/join.html" class="button">Join Here!</a>
-                </div>
-            </section>
-
-            <section class="business-spotlight-card">
-                <h2>Business Spotlight</h2>
-
-            </section>
+        <div class="container">
+            <h1>Well Done Thank You!</h1>
+            <p id="first-name"></p>
+            <p id="last-name"></p>
+            <p id="email"></p>
+            <p id="mobile-number"></p>
+            <p id="business-name"></p>
+            <p id="business-title"></p>
+            <p id="membership"></p>
+            <p id="description"></p>
+            <p id="timestamp"></p>
         </div>
     </main>
 

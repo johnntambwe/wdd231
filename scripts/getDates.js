@@ -42,7 +42,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -66,7 +66,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -94,6 +94,83 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     }
 ]
+
+
+//Displaying course details
+
+const courseName = document.querySelector('.course-name');
+const courseTaken = document.querySelector('.course-taken');
+
+function displayCourse(courses) {
+    courses.forEach(course => {
+
+        const courseCode = document.createElement('div');
+        courseCode.className = 'course-code';
+        courseCode.textContent = `${course.subject} ${course.number}`;
+
+        if (course.completed == false) {
+            courseCode.style.color = '#eee';
+            courseCode.style.backgroundColor = 'rgb(3, 80, 131)';
+        }
+        courseName.appendChild(courseCode);
+        courseTaken.textContent = `The total credits for course listed above is ${courses.length}`;
+
+    });
+}
+
+
+// Appplying filters
+const allCourse = document.querySelector('.all-bn');
+const cseCourse = document.querySelector('.cse-bn');
+const wddCourse = document.querySelector('.wdd-bn');
+
+allCourse.addEventListener('click', () => {
+    courseName.textContent = '';
+    displayCourse(courses);
+});
+
+cseCourse.addEventListener('click', () => {
+    let newcourses = courses.filter(course => course.subject === 'CSE');
+    courseName.textContent = '';
+    displayCourse(newcourses);
+
+});
+
+wddCourse.addEventListener('click', () => {
+    let newcourses = courses.filter(course => course.subject == 'WDD');
+    courseName.textContent = '';
+    displayCourse(newcourses);
+});
+
+// Dialog
+
+const courseDetails = document.querySelector('#course-details');
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${courses.technology}</p> 
+    
+  `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
+courseName.addEventListener('click', () => {
+    const randomNumber = Math.floor(Math.random() * courses.length);
+    displayCourseDetails(courses[randomNumber]);
+});
+
+

@@ -94,6 +94,7 @@ nav a.active {
 
 .hero-content p {
     font-size: 1.2rem;
+    padding-bottom: 1rem;
 }
 
 /* Main content grid */
@@ -189,19 +190,25 @@ nav a.active {
     margin-bottom: 20px;
 }
 
-.action button {
+.button {
     background-color: var(--secondary-color);
     border-color: white;
-    padding: 0.8rem 1rem;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
     border-radius: 15px;
+    text-decoration: none;
     transition: background-color 0.3s;
 }
 
-.action button:hover,
-button.active {
+.button:hover,
+.button.active {
     background-color: var(--primary-color);
+    color: #eee;
 }
 
+.list-link {
+    list-style: none;
+}
 
 /* Business spotlight */
 .business-spotlight-card {

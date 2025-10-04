@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Web Frontend Development 1 home page">
+    <meta name="author" content="John Ntambwe">
+    <title>Golden Chamber of Commerce</title>
+    <link rel="icon" href="../images/favicon.ico">
+
+    <meta property="og:title" content="Golden Chamber">
+    <meta property="og:description"
+        content="Golden Chamber aims to bring an additional value to all businesses and entrepreneurs in Lubumbashi.">
+    <meta property="og:image" content="./images/golden-chamber-logo-in-color.png">
+    <meta property="og:url" content="https://johnntambwe.github.io/wdd231/index.html">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="./styles/join.css">
+
+
+    <script src="./scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="../images/golden-chamber-logo-in-color.png" alt="Golden-Chamber-logo">
+                <h1>Golden Chamber of Commerce</h1>
+            </div>
+            <nav>
+                <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+                <ul id="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- <h1>Join Golden Chamber of Commerce Community!</h1> -->
+
+        <div class="form">
+            <form method="GET" action="./thankyou.html" class="designOne">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                        title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                        title="Your Last Name"></label>
+                <label for="organization-title">Organizational Title:</label>
+                <input type="text" id="organization-title" name="organization-title" autocomplete="organization-title"
+                    pattern="^[a-zA-Z\s-]{7,}$"
+                    title="Must be at least 7 characters long and can contain only letters, spaces, and hyphens."
+                    required>
+                <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                        autocomplete="email"></label>
+                <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+                        placeholder="987-555-1234"></label>
+
+                <label for="organization">Business/Organization's Name</label>
+                <input type="text" required name="organization" id="organization"
+                    title="Enter your business or organization name" autocomplete="organization">
+
+                <label for="membership-level">Select Membership Level:
+                    <select id="membership-level" name="membership-level" required>
+                        <option value="">Select</option>
+                        <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label for="organization-description">Businness Description:</label>
+                <textarea id="organization-description" name="organization-description" rows="5" cols="50" required>
+                        </textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                <input type="submit" value="Join Now">
+            </form>
+
+        </div>
+
+        <div class="membership-levels">
+            <div class="card" id="card-1">
+                <h2>NP Membership</h2>
+                <p>$0/month</p>
+                <p>Non-Profit</p>
+                <p>Access to exclusive events</p>
+                <a href="#" data-modal="modal-1">Learn More</a>
+            </div>
+            <div class="card" id="card-2">
+                <h2>Bronze Membership</h2>
+                <p>$20/month</p>
+                <p>Access to exclusive events</p>
+                <p>Discounts on training</p>
+                <a href="#" data-modal="modal-2">Learn More</a>
+            </div>
+            <div class="card" id="card-3">
+                <h2>Silver Membership</h2>
+                <p>$50/month</p>
+                <p>Access to exclusive events</p>
+                <p>Discounts on training</p>
+                <p>Spotlight position on homepage</p>
+                <a href="#" data-modal="modal-3">Learn More</a>
+            </div>
+            <div class="card" id="card-4">
+                <h2>Gold Membership</h2>
+                <p>$100/month</p>
+                <p>Access to exclusive events</p>
+                <p>Discounts on training</p>
+                <p>Spotlight position on homepage</p>
+                <p>Personalized support</p>
+                <a href="#" data-modal="modal-4">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div class="modal" id="modal-1">
+            <h2>Basic Membership</h2>
+            <p>Access to exclusive events</p>
+            <button class="close-modal">Close</button>
+        </div>
+        <div class="modal" id="modal-2">
+            <h2>Premium Membership</h2>
+            <p>Access to exclusive events</p>
+            <p>Discounts on training</p>
+            <button class="close-modal">Close</button>
+        </div>
+        <div class="modal" id="modal-3">
+            <h2>Elite Membership</h2>
+            <p>Access to exclusive events</p>
+            <p>Discounts on training</p>
+            <p>Spotlight position on homepage</p>
+            <button class="close-modal">Close</button>
+        </div>
+        <div class="modal" id="modal-4">
+            <h2>Ultimate Membership</h2>
+            <p>Access to exclusive events</p>
+            <p>Discounts on training</p>
+            <p>Spotlight position on homepage</p>
+            <p>Personalized support</p>
+            <button class="close-modal">Close</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Golden Chamber of Commerce</h3>
+                <p>20 Kiankodi St, Lubumbashi, DR Congo.</p>
+                <p>goldenservice011@gmail.com</p>
+                <p>(+243) 8100-31046</p>
+            </div>
+            <div class="footer-img-links">
+
+
+                <a href="https://www.linkedin.com"><img src="../images/linkedin-icon.png" alt="linkedIn"></a>
+
+                <a href="https://github.com/johnntambwe/"><img src="../images/github-icon.png" alt="Github"></a>
+
+                <a href="https://x.com"><img src="../images/twitter-icon.png" alt="X"></a>
+
+            </div>
+            <div class="project-info">
+                <p>WDD231 Class Project</p>
+                <p>🍃 John Ntambwe 🌏</p>
+                <p>&copy; 2025 Golden Chamber of Commerce</p>
+                <p id="last-modified">Last Modification: </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
