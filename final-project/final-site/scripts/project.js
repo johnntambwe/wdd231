@@ -18,7 +18,7 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('open');
 });
 
-// JavaScript Temple-Object
+// JavaScript Template-Object
 
 const fruits = [
     {
