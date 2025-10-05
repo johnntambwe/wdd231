@@ -1,0 +1,18 @@
+/* Medium screens (641px to 1024px) */
+@media (min-width: 641px) {
+    .gallery-grid {
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Image hover effects for medium and larger screens */
+    .card img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}

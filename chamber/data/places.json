@@ -1,0 +1,60 @@
+{
+    "places": [
+        {
+            "id": 1,
+            "name": "City Park",
+            "address": "123 Park Avenue",
+            "description": "Beautiful urban park with walking trails, playgrounds, and picnic areas perfect for family outings.",
+            "image": "https://cloudinary-marketing-res.cloudinary.com/image/upload/ar_0.5,c_fill,g_auto/w_233/q_auto/f_auto/hiking_dog_mountain"
+        },
+        {
+            "id": 2,
+            "name": "Historical Museum",
+            "address": "456 History Lane",
+            "description": "Explore our town's rich history through interactive exhibits and historical artifacts.",
+            "image": "https://www.gstatic.com/webp/gallery/3.sm.webp"
+        },
+        {
+            "id": 3,
+            "name": "Riverwalk",
+            "address": "789 Riverside Drive",
+            "description": "Scenic walking path along the river with beautiful views and recreational activities.",
+            "image": "https://www.gstatic.com/webp/gallery/1.sm.webp"
+        },
+        {
+            "id": 4,
+            "name": "Shopping District",
+            "address": "321 Main Street",
+            "description": "Vibrant downtown area with local shops, restaurants, and entertainment venues.",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb0MR87BwMLwj06ZBAY__8ef89ozTSVaYKqA&s"
+        },
+        {
+            "id": 5,
+            "name": "Community Center",
+            "address": "654 Community Way",
+            "description": "Modern facility offering classes, events, and recreational activities for all ages.",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQic1I95-kVpbML2kgBMvxEMYrI07Rv36a6rw&s"
+        },
+        {
+            "id": 6,
+            "name": "Botanical Gardens",
+            "address": "987 Garden Road",
+            "description": "Stunning gardens featuring native plants, seasonal flowers, and educational programs.",
+            "image": "https://www.gstatic.com/webp/gallery/4.sm.webp"
+        },
+        {
+            "id": 7,
+            "name": "Sports Complex",
+            "address": "147 Sports Avenue",
+            "description": "State-of-the-art athletic facilities for various sports and community events.",
+            "image": "https://www.gstatic.com/webp/gallery/2.sm.webp"
+        },
+        {
+            "id": 8,
+            "name": "Art Gallery",
+            "address": "258 Art Street",
+            "description": "Contemporary art space showcasing local and regional artists' work.",
+            "image": "https://www.gstatic.com/webp/gallery/5.sm.webp"
+        }
+    ]
+}
