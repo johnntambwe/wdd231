@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden-Service.com</title>
+    <meta name="description" content="W06 Assignment: Golden-Service.">
+    <meta name="author" content="John Ntambwe">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/project-small.css">
+    <link rel="stylesheet" href="./styles/project-large.css">
+    <link rel="stylesheet" href="./styles/form.css">
+
+    <script src="./scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="./project.html"> <img src="./images/gs_logo_white_bg.png" alt="logo" width="60"
+                    id="logo"></a>Golden Service </h1>
+        <!-- <a id="menu" href="#"></a> -->
+        <nav>
+            <ul class="navigation">
+                <li><a href="./project.html" class="home">Home</a></li>
+                <li><a href="./about-us.html" class="about-us">About Us</a></li>
+                <li><a href="./review.html" class="review">Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <form method="get" action="./review.html" class="wf1">
+
+            <label>Product Name
+                <select name="subject" class="productList">
+                    <option value="" selected disabled>Select a Product ... &#9662;</option>
+                </select>
+            </label>
+
+            <div class="rate">Overall Rating</div>
+            <div class="radio">
+                <label class="radio"><input type="radio" name="rating" value="1" id="onestar" required>&star;</label>
+                <label class="radio"><input type="radio" name="rating" value="2" id="twostar"
+                        required>&star;&star;</label>
+                <label class="radio"><input type="radio" name="rating" value="3" id="threestar"
+                        required>&star;&star;&star;</label>
+                <label class="radio"><input type="radio" name="rating" value="4" id="fourstar"
+                        required>&star;&star;&star;&star;</label>
+                <label class="radio"><input type="radio" name="rating" value="5" id="fivestar"
+                        required>&star;&star;&star;&star;&star;</label>
+
+            </div>
+
+            <label>Date of Installation <input type="date" name="completeDate" id="installationdate" required></label>
+
+            <div>Which features did you find useful in the product?
+                <p>(Check all that apply)</p>
+            </div>
+            <label><input type="checkbox" name="durability" value="yes" id="durability">Tasty</label>
+            <label><input type="checkbox" name="ease" value="yes" id="ease">Cheaper</label>
+            <label><input type="checkbox" name="performance" value="yes" id="performance">Expensive</label>
+            <label><input type="checkbox" name="design" value="yes" id="design">Out of stock</label>
+
+            <label>Written Review <span>(Optional)</span>
+                <textarea name="writtenreview" id="review"></textarea></label>
+
+            <label>Your Name <span>(Optional)</span><input type="text" name="name"></label>
+
+            <input type="submit" value="Post Review">
+
+        </form>
+
+
+    </main>
+
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 🍃 John Ntambwe 🌏 DRCongo.
+        </p>
+
+        <p id="lastModified"><span></span></p>
+
+    </footer>
+
+</body>
+
+</html>

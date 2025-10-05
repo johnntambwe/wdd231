@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #00008B;
+    color: #eee;
+}
+
+main {
+
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+.wf1 {
+    background-color: lightgray;
+    margin: 2rem 0;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.radio {
+    display: flex;
+    max-width: 600px;
+}
+
+.wf1 label,
+.wf1 input[type="text"],
+.wf1 input[type="date"],
+.wf1 textarea,
+.wf1 select {
+    display: block;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#010165, #00008B);
+    color: lightgray;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 textarea {
+    height: 100px;
+    color: #999;
+}
+
+.wf1 input[type="text"] {
+    margin-bottom: 10px;
+
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="date"],
+.wf1 textarea,
+select {
+    font-size: 1rem;
+    color: #999
+}
+
+footer {
+    padding: 2rem;
+    color: #eee;
+    background-color: #00008B;
+    text-align: center;
+}
